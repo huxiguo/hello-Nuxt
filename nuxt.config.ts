@@ -39,5 +39,13 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+  plugins: ['~/plugins/1.price.server.ts']
+
+  // ssr: false
+  // routeRules: {
+  //   '/': { ssr: true },
+  //   '/cart': { ssr: false },
+  //   '/login': { swr: true }
+  // }
 })
