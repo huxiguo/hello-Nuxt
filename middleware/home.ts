@@ -1,3 +1,3 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  console.log('home.ts')
+  // console.log('home.ts')
 })

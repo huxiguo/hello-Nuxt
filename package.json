@@ -9,9 +9,22 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@element-plus/nuxt": "^1.0.4",
+    "@iconify-json/bxl": "^1.1.6",
     "@nuxt/devtools": "^0.4.5",
     "@types/node": "^18",
+    "@unocss/nuxt": "^0.51.12",
+    "@unocss/preset-icons": "^0.51.12",
+    "element-plus": "^2.3.4",
     "nuxt": "^3.4.3",
     "sass": "^1.62.1"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.1.16",
+    "@pinia/nuxt": "^0.4.9",
+    "pinia": "^2.0.35"
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <!-- 布局 -->
-  <NuxtLayout>
+  <NuxtLayout name="custum-layout">
     <!-- 页面内容 -->
     <NuxtPage />
   </NuxtLayout>

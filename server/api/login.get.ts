@@ -5,7 +5,8 @@ export default defineEventHandler(event => {
     code: 200,
     data: {
       name: 'seekhoo',
-      age: 18
+      age: 18,
+      token: '1234567890'
     }
   }
 })

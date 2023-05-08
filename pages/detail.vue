@@ -1,15 +1,20 @@
 <script lang="ts" setup>
-// import { fetchHomeInfoData } from '~/service/home'
-// const { data } = await fetchHomeInfoData()
+import { storeToRefs } from 'pinia'
+import { useHomeStore } from '~/store/home'
 
-// console.log(data.value?.code)
-// console.log(data.value?.data)
-const { data } = await useLazyFetch('/api/homeInfo')
-console.log('data', data)
+const homeStore = useHomeStore()
+const { count } = storeToRefs(homeStore)
+const addCount = () => {
+  homeStore.increment()
+}
 </script>
 
 <template>
-  <div>Page: detail</div>
+  <div>
+    Page: detail
+    <div>{{ count }}</div>
+    <div><button @click="addCount">++</button></div>
+  </div>
 </template>
 
 <style scoped></style>

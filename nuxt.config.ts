@@ -28,7 +28,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxt/devtools'],
+  modules: ['@nuxt/devtools', '@pinia/nuxt', '@element-plus/nuxt', '@unocss/nuxt'],
   // css
   css: ['@/assets/style/main.css', '@/assets/style/global.scss'],
   vite: {
@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     }
   },
   plugins: ['~/plugins/1.price.server.ts']
-
   // ssr: false
   // routeRules: {
   //   '/': { ssr: true },
